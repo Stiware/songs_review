@@ -1,0 +1,39 @@
+  <nav class="navbar top-nav rounded">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">SR</a>
+      <form   role="search " class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+        <button class="btn btn-outline-dark justify-content-center" type="submit" (click)="goToSearch()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </form>
+      <button class="btn btn-outline-success" type="button" (click)="login()">
+        <img src="https://cdn-icons-png.flaticon.com/512/160/160187.png" width="30" height="30" alt=""> Iniciar Sesion</button>
+    </div>
+    <button (click)="showme()">show</button>
+  </nav>
+
+<div class="container">
+      <nav class="navbar navbar-expand-lg bg-coffe rounded">
+          <div class="container-fluid justify-content-center">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around text-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav " >
+                        <a class="nav-link" [ngClass]="{active: isActive('/home')}" routerLink="/home">Home</a>
+                        <a class="nav-link" [ngClass]="{active: isActive('/artist')}" routerLink="/artist">Artist</a>
+                        <a class="nav-link" [ngClass]="{active: isActive('/album')}" routerLink="/album">Album</a>
+                    </div>
+                </div>
+    </div>
+  </nav>
+</div>
+
+
+<!-- <div class="container my-5">
+  <app-reviews [reviwe]="{artist: 'The Beatles', album: 'Abbey Road', song_name: 'Come Together', album_img: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Beatles_-_Abbey_Road.jpg/220px-Beatles_-_Abbey_Road.jpg', time_ago: '4 days ago'}"/>
+  <app-reviews [reviwe]="{artist: 'Nirvana', album: 'Nevermind', song_name: 'In Bloom', album_img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b7/NirvanaNevermindalbumcover.jpg/220px-NirvanaNevermindalbumcover.jpg', time_ago: '4 days ago'}"/>
+  <app-reviews [reviwe]=algo/>
+</div> -->
+
